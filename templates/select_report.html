@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   <title>Select Report </title>
+   <br>
+
+</head>
+<body>
+
+    <div class="container">
+        <header>Report</header>
+        <button class="btn btn-outline-primary my-2 my-sm-0" style="margin-left:400px;"  onclick="location.href='{{url_for('add_report')}}'"> Add Report </button>
+        <button class="btn btn-outline-success my-2 my-sm-0"  onclick="location.href='{{url_for('print_report')}}'"> Print Report </button>
+    </div>
+
+    <script src="{{url_for('static',filename='script.js')}}"></script>
+</body>
+</html>
